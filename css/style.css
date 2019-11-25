@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@font-face {
+font-family: "impact";
+src: url("fonts/impact.eot");
+src: url("fonts/impact.ttf");
+src: url("fonts/impact.otf");
+}
+/* HEADER SECTION START */
+header{
+	background-image:url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 102vh;
+	position: relative;
+}
+.fixed-top {
+    background: #1923253b !important;
+}
+.navbar {
+    padding: 0 !important;
+}
+.navbar a h1{
+	color:#40afcc;
+	font-weight: 600;
+}
+.navbar a h1 span{
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+    color: #fff !important;
+    font-weight: 600;
+   transition:all 0.4s;
+    position: relative;
+    padding: 36px 18px !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	background-color: #42b1cd57;
+}
+.navbar-light .navbar-nav .nav-link::after{
+	content: "";
+	height: 0px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	transition: all 0.4s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+	background-color: #40afcc;
+	height: 10px;
+}
+.banner_content{
+	color:#fff;
+	text-align: center;
+	margin-top: 32vh;
+}
+.banner_content h2{
+	font-size: 50px;
+	color: #40afcc;
+}
+.banner_content h2 span{
+	color:#fff!important;
+	font-weight: 100!important;
+}
+.banner_content p{
+	color: #f7f7f7a3 !important;
+	font-size:20px;
+	font-weight: 100;
+	margin: 25px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn-custom,.btn-reverse{
+	font-size: 18px !important;
+    color: #fff !important;
+    padding: 12px 30px !important;
+    border: 1px solid #40afcc !important;
+    transition-duration: 0.4s !important;
+    margin-top: 15px;
+}
+.btn-custom {
+    background-color: #40afcc !important;
+    border-bottom-left-radius: 35px !important;
+}
+.btn-reverse{
+    background-color: transparent !important;
+    border-bottom-right-radius: 35px !important;
+}
+.btn-reverse:hover{
+	background-color: #40afcc !important;
+}
+.btn-custom:hover{
+	background-color: transparent !important;
+}
+ .social_link{
+ 	position: absolute;
+ 	bottom: 50%;
+ 	right: 12px;
+ 	transform: translateY(50%);
+ 	-webkit-transform: translateY(50%);
+ 	-moz-transform: translateY(50%);
+ 	-o-transform: translateY(50%);
+ } 
+ .social_link li{
+    margin-bottom: 12px;
+}
+ .social_link li a i{
+    color: #929292;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.4s;
+}
+ .social_link li a i:hover{
+ 	color: #fff;
+ 	background-color: #40afcc;
+ }
+ .social_link li span{
+ 	font-size: 18px;
+ 	color: #f9f9f9;
+ 	transform: rotate(-90deg)translate(-45px, -30px);
+ 	-webkit-transform: rotate(-90deg)translate(-45px, -30px);
+ 	-moz-transform: rotate(-90deg)translate(-45px, -30px);
+ 	-o-transform: rotate(-90deg)translate(-45px, -30px);
+ 	display: inline-block;
+ 	font-weight: 600;
+ }
+/* HEADER SECTION END */
+
+/* ABOUT SECTION START */
+#about_sec{
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+#about_sec .blog_image{}
+#about_sec .blog_image img{width: 100%;}
+#about_sec .about_content{margin-top: 22px;}
+.heading{
+	text-align: center;
+	padding-bottom: 22px;
+}
+.heading h1 {
+    color: #40afcc;
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 21px;
+    font-family: 'Open Sans', sans-serif;
+}
+.heading h1 span{
+	font-family: "impact";
+	font-size: 120px;
+	color:#f7f7f7;
+	position: absolute;
+    left: 0;
+    bottom: -37px;
+    width: 100%;
+    z-index: -1;
+}
+#about_sec .about_content p {
+    color: #242424de;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ABOUT SECTION END */
+/* SKILLS SECTION START */
+#skills_sec{
+	margin-bottom: 100px;
+}
+#skills_sec h4{
+    color: #40afcc;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding: 50px 0 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.hvr{
+    position: relative;
+}
+.hvr img{}
+.hvr a{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1;
+    transition: all 0.4s !important;
+	opacity: 0;
+}
+.hvr:hover a{
+	text-decoration: none;
+	opacity: 1;
+	color: #fff;
+	transform: translateY(-35%);
+}
+.hvr::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #0f1416d9;
+	transform: scale(0.7);
+	transition: all 0.4s;
+	opacity: 0;
+}
+.hvr:hover::after{
+	transform: scale(1);
+	opacity: 1;
+}
+/* SKILLS SECTION END */
+/* RESUME SECTION START */
+#resume_sec{
+	margin-top: 150px;
+}
+#resume_sec h5{
+    font-size: 22px;
+    color: #aaaaaa;
+    margin: 125px 0 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.resume_box{
+    position: relative;
+    padding: 0 30px 30px;
+}
+.resume_box::after{
+	content:"";
+	height: 100%;
+	width: 2px;
+	background: #40afcc;
+	position: absolute;
+	top: 20px;
+	left: 9px;
+	display: block;
+}
+.resume_box::before{
+	content:"";
+	width: 20px;
+	height: 20px;
+	background: #40afcc;
+	display: block;
+	top: 2px;
+	left: 0;
+	position: absolute;
+	border-radius: 50%;
+	border:2px solid #40afcc;
+	transition: all 0.4s;
+}
+.resume_box:hover::before{
+	background: #fff;
+	box-shadow: 0 0 4px #40afcc;
+}
+.resume_box .resume{
+	padding: 20px 12px;
+	transition: all 0.4s;
+}
+.resume_box:hover .resume{
+	background-image: url(../images/education_img.png);
+	box-shadow: 0 2px 6px #40afcc;
+	padding: 20px 22px;
+	cursor: pointer;
+    background-repeat: no-repeat;
+}
+.resume_box .resume span{
+    color: #242424;
+    font-size: 22px;
+    border: 1px solid #242424;
+    padding: 4px 8px;
+    border-bottom-right-radius: 22px;
+    display: inline-block;
+}
+.resume_box .resume:hover span{
+	color: #40afcc;
+    border: 1px solid #40afcc;
+}
+.resume_box .resume h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #242424;
+    margin: 12px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.resume_box .resume:hover h3{
+	color: #40afcc;
+}
+.resume_box .resume h6{
+    color: #242424;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.resume_box .resume p {
+    padding: 8px 2px;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+/* RESUME SECTION END */
+
+
+#work_section{
+	padding:100px 0;
+}
+.work-list{
+	margin:50px 0 30px !important;
+}
+.work-list li .btn{
+	font-size: 24px;
+	color: #505050;
+	border-bottom-right-radius: 25px;
+	padding: 12px 25px;
+	transition: all 0.4s !important;
+	border:2px solid transparent;
+}
+.work-list li .btn:hover{
+	border:2px solid #40afcc;
+	color: #40afcc;
+}
+.question_sec{
+ 	padding: 49px 10px;
+}
+input,textarea {
+    padding: 3px 10px !important;
+}
+.form-control {
+    padding: 13px 10px !important;
+}
+.close {
+    margin-bottom: 18px;
+}
+.modal-body form .btn-custom {
+    border-bottom-left-radius: 0px !important;
+    float: right;
+    border-bottom-right-radius: 40% !important;
+}
+.modal-body form .btn-custom:hover{
+	color: #40afcc !important;
+}
+.question_sec .container{
+	background-image: url(../images/question.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 65px 50px;
+}
+.question_sec h3{
+	font-size: 50px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 0;
+}
+.question_sec h2{
+	font-size: 50px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 0;
+	line-height: 0.7;
+}
+.question_sec .btn{
+    font-size: 24px;
+    color: #40afcc;
+    background: #fff;
+    border-bottom-right-radius: 30px;
+    font-weight: 600;
+    padding: 16px 30px;
+    float: right;
+    box-shadow: 0 0 10px #636369ba;
+}
+.question_sec .btn:hover{
+	color: #40afcc;
+}
+#touch_section .heading{
+	margin-bottom: 70px;
+}
+#touch_section .btn {
+    font-size: 24px;
+    color: #fff;
+    background: #40afcc;
+    border-bottom-right-radius: 30px;
+    font-weight: 600;
+    padding: 10px 48px;
+    float: right;
+    margin: 10px 0;
+}
+#touch_section .btn:hover{
+	color: #40afcc;
+    background: #fff;
+    border: 1px solid #40afcc;
+    transition: all 0.4s;
+}
+input,textarea {
+    border: 1px solid #40afcc !important;
+    background-color: #fafafa !important;
+}
+.social_services{
+	padding:50px 0 50px;
+}
+.social_services a{
+	display: block;
+	text-decoration: none !important;
+}
+.social_services a ul{
+    margin: 30px 0;
+    background-color: #f1fcff;
+    padding: 25px 45px;
+    border-bottom-right-radius: 30%;
+    align-items: center;
+}
+.social_services a ul li{
+    margin-left: 15px;
+}
+.social_services a ul li i{
+    color: #40afcc;
+    font-size: 70px;
+}
+.social_services a ul li span{
+    color: #40afcc;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.footer_section{
+	background-color:#40afcc;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+}
+.footer_section h3{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 80px;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.scrollUp a i {
+    position: fixed;
+    background-color: #2da4c3;
+    height: 37px;
+    width: 37px;
+    right: 35px;
+    bottom: 35px;
+    color: #fff;
+    line-height: 37px;
+    text-align: center;
+    font-size: 24px;
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+ .navbar-light .navbar-brand {
+    margin: 0px 15px;
+}
+.list-unstyled {
+    display: none;
+}
+.navbar-collapse {
+    line-height: 0px;
+    background-color: #40afcc;
+    text-align: center;
+}
+.banner_content {
+    margin-top: 28vh;
+}
+.banner_content h2 {
+    font-size: 40px;
+}
+.banner_content p {
+    font-size: 15px;
+}
+.btn-custom, .btn-reverse {
+    font-size: 16px !important;
+    padding: 10px 25px !important;
+}
+#about_sec .blog_image img {
+    width: 80%;
+}
+.heading h1 {
+    font-size: 46px;
+}
+.heading h1 span {
+    font-size: 75px;
+    bottom: -12px;
+    width: 100%;
+}
+#about_sec .about_content p {
+    font-size: 15px;
+    line-height: 22px;
+}
+.hvr:hover a {
+    transform: translateY(-60%);
+}
+.work-list li .btn {
+    font-size: 20px;
+    padding: 6px 15px;
+    transition: all 0.4s !important;
+}
+.work-list {
+    margin: 0 !important;
+}
+.question_sec h2 {
+    font-size: 34px;
+}
+.question_sec h3 {
+    font-size: 36px;
+}
+.question_sec .btn {
+    font-size: 18px;
+    padding: 12px 18px;
+    margin-top: 16px;
+}
+#touch_section .btn {
+    font-size: 24px;
+    padding: 10px 30px;
+}
+.social_services a ul li i {
+    font-size: 64px;
+}
+.social_services a ul li span {
+    font-size: 28px;
+    margin-left: 15px;
+}
+.footer_section h3 {
+    font-size: 18px;
+}
+.resume_box .resume h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+.resume_box .resume h6 {
+    font-size: 16px;
+}
+.resume_box .resume p {
+    padding: 8px 2px;
+    font-size: 13px;
+}
+.social_services a ul {
+    margin: 8px 0;
+}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+ 
+}
